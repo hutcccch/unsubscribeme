@@ -14,5 +14,3 @@ chrome.runtime.onMessage.addListener((message) => {
     }
   });
   
-  //DEBUGGING
-  console.log("Bacground process running -- background.js");

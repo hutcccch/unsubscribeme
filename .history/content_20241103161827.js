@@ -23,9 +23,6 @@ function findUnsubscribeLinks() {
     chrome.runtime.sendMessage({ type: 'emailList', emails: unsubscribeEmails });
   }
   
-  //DEBUGGING
-  console.log("Gmail has been detected -- running content.js");
-
   // Run findUnsubscribeLinks when the page loads
   window.addEventListener("load", findUnsubscribeLinks);
   
