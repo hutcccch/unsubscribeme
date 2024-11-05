@@ -2,7 +2,7 @@
 
 chrome.runtime.onMessage.addListener((message) => {
     console.log("Message received in background:", message); // For debugging
-  
+     
     if (message.type === 'openTab' && message.url) {
       chrome.tabs.create({ url: message.url }, (tab) => {
         if (chrome.runtime.lastError) {
@@ -15,4 +15,4 @@ chrome.runtime.onMessage.addListener((message) => {
   });
   
   //DEBUGGING
-  console.log("Bacground process running -- background.js");
+  console.log("Background process running -- background.js");

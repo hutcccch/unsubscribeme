@@ -3,7 +3,7 @@
     "name": "Email Unsubscribe Helper",
     "version": "1.0",
     "description": "Chrome extension to help users unsubscribe from emails.",
-    "permissions": ["activeTab", "scripting", "tabs"],
+    "permissions": ["activeTab", "scripting", "tabs", "webNavigation"],
     "action": {
       "default_popup": "popup.html"
     },
